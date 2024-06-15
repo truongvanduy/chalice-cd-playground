@@ -7,6 +7,7 @@ app.debug = True
 CITIES_TO_STATE = {
     'seattle': 'WA',
     'portland': 'OR',
+    'sanfrancisco': 'CA',
 }
 
 
