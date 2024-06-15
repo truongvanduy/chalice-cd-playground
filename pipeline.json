@@ -41,9 +41,7 @@
           "Version": "2012-10-17",
           "Statement": [
             {
-              "Action": [
-                "sts:AssumeRole"
-              ],
+              "Action": ["sts:AssumeRole"],
               "Effect": "Allow",
               "Principal": {
                 "Service": [
@@ -74,11 +72,7 @@
               "Effect": "Allow"
             },
             {
-              "Action": [
-                "s3:GetObject",
-                "s3:GetObjectVersion",
-                "s3:PutObject"
-              ],
+              "Action": ["s3:GetObject", "s3:GetObjectVersion", "s3:PutObject"],
               "Resource": "arn:*:s3:::*",
               "Effect": "Allow"
             }
@@ -179,7 +173,7 @@
                       ]
                     ]
                   },
-                  "Branch": "master",
+                  "Branch": "main",
                   "PollForSourceChanges": true
                 }
               }
@@ -318,18 +312,12 @@
                   "Effect": "Allow"
                 },
                 {
-                  "Action": [
-                    "cloudwatch:*",
-                    "iam:PassRole"
-                  ],
+                  "Action": ["cloudwatch:*", "iam:PassRole"],
                   "Resource": "*",
                   "Effect": "Allow"
                 },
                 {
-                  "Action": [
-                    "lambda:InvokeFunction",
-                    "lambda:ListFunctions"
-                  ],
+                  "Action": ["lambda:InvokeFunction", "lambda:ListFunctions"],
                   "Resource": "*",
                   "Effect": "Allow"
                 },
@@ -366,9 +354,7 @@
           "Version": "2012-10-17",
           "Statement": [
             {
-              "Action": [
-                "sts:AssumeRole"
-              ],
+              "Action": ["sts:AssumeRole"],
               "Effect": "Allow",
               "Principal": {
                 "Service": [
@@ -404,9 +390,7 @@
           "Version": "2012-10-17",
           "Statement": [
             {
-              "Action": [
-                "sts:AssumeRole"
-              ],
+              "Action": ["sts:AssumeRole"],
               "Effect": "Allow",
               "Principal": {
                 "Service": [
