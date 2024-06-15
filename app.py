@@ -27,6 +27,11 @@ def state_of_city(city):
             city, ', '.join(CITIES_TO_STATE.keys())))
 
 
+@app.route('/test', methods=['GET'])
+def test_deployment():
+    return {'status': 'success'}
+
+
 @app.route('/resource/{value}', methods=['PUT'])
 def put_test(value):
     return {'value': value}
